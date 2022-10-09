@@ -1,0 +1,189 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+body{
+    background-color: #020409;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    /* background-color: red; */
+    padding: 0 100px;
+    box-shadow: 10px 10px 50px blueviolet;
+}
+#home-page{
+    color: white;
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 130px);
+}
+#home-page-card{
+    animation: shadow infinite 5s;
+    display: grid;
+    border-radius: 15px;
+    place-items: center;
+    max-width: 500px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+}
+#home-page-card h1{
+    animation: textshadow infinite .2s;
+}
+#events-page{
+    height: auto;
+    margin-bottom: 70px;
+    display: grid;
+    place-content: center;
+}
+#tech-nontech-titles{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color: white;
+}
+#tech-title{
+    text-shadow: 5px 5px red;
+
+}
+#nontech-title{
+    text-shadow: 5px 5px blue;
+}
+#non-tech-at-small-devices{
+    display: none;
+}
+#events-page h1{
+    color: white;
+    text-align: center;
+    margin: 1.5em;
+}
+#fire-technical{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+#water-nontechnical{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+#cards{
+    display: flex;
+    justify-content: space-between;
+    /* flex-flow: wrap; */
+}
+
+.card{
+    margin: 1.5em;
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    text-align: center;
+    transition: .2s ease all;
+    cursor:default;
+    /* background-color: orange; */
+}
+#fire-technical .card{
+    box-shadow: 1px 1px 10px red;
+}
+#water-nontechnical .card{
+    box-shadow: 1px 1px 10px blue;
+    
+}
+#fire-technical .card:hover{
+    box-shadow: 5px 5px 50px red;
+    background-image: url('../images/fire-effect.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#water-nontechnical .card:hover{
+    box-shadow: 5px 5px 50px blue;
+    background-image: url('../images/water-effect.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.card-title{
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.card-description{
+    color: white;
+    font-size: small;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+#fire-technical .card a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: red;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 8px 8px 20px white; */
+    
+}
+#water-nontechnical .card a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: blue;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 8px 8px 20px white; */
+    
+}
+footer{
+    height: 90px;
+    box-shadow: 10px 10px 30px violet;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#social-media{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 90px;
+}
+#abt-rmkcet{
+    margin-left: 90px;
+}
+#abt-rmkcet a{
+    text-decoration: none;
+    color: red;
+}
+.media-card{
+    margin: 15px;
+}
+
+/* ANIMATIONS */
+@keyframes shadow{
+    0%{
+        box-shadow: 10px 10px 50px red;
+    }
+    50%{
+        box-shadow: 10px 10px 50px green;
+    }
+    100%{
+        box-shadow: 10px 10px 50px blue;
+    }
+}
+
+@keyframes textshadow{
+    0%{
+        text-shadow: 3px 3px 1px red;
+    }
+    100%{
+        text-shadow: 3px 3px 1px blue;
+    }
+}

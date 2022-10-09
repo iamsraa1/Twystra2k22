@@ -1,0 +1,114 @@
+/* Extra Small Devices */
+@media (max-width: 576px){
+    #navbar{
+        padding: 0 20px;
+    }
+    #home-page{
+        height: calc(100vh - 100px);
+    }
+    #home-page-card{
+        font-size: small;
+        width: 300px;
+        height: 300px;
+    }
+    #events-page{
+        height: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+    #cards{
+        display: block;
+    }
+    #nontech-title{
+        display: none;
+    }
+    #non-tech-at-small-devices{
+        color: white;
+        display: block;
+        text-shadow: 5px 5px blue;
+        text-align: center;
+    }
+    footer{
+        color: white;
+    }
+    
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 767px){
+    #navbar{
+        padding: 0 20px;
+    }
+    #home-page{
+        height: calc(100vh - 100px);
+    }
+    #home-page-card{
+        font-size: small;
+        width: 400px;
+        height: 350px;
+    }
+    #events-page{
+        height: auto;
+        margin-bottom: 50px;
+        display: block;
+    }
+    #cards{
+        display: block;
+    }
+    #nontech-title{
+        display: none;
+    }
+    #non-tech-at-small-devices{
+        color: white;
+        display: block;
+        text-shadow: 5px 5px blue;
+        text-align: center;
+    }
+    
+}
+
+/* Medium Devices */
+@media (min-width: 767px) and (max-width: 991px){
+    #events-page{
+        height: auto;
+        margin-bottom: 50px;
+    }
+   footer{
+    height: auto;
+   }
+}
+
+/* Large Devices */
+@media (min-width: 991px) and (max-width: 1199px){
+    #home-page-card{
+        width: 800px;
+        height: 400px;
+    }
+    #home-page{
+        height: 85vh;
+    }
+    #events-page{
+        height: auto;
+        margin-bottom: 60px;
+    }
+    footer{
+        height: auto;
+    }
+}
+
+/* Xtra Large Devices */
+@media (min-width: 1199px) and (max-width: 1399px){
+    #events-page{
+        height: 230vh;
+    }
+}
+
+@media (min-width: 696px) and (max-width: 767px){
+    #events-page{
+        height: auto;
+        display: block;
+    }
+    #non-tech-at-small-devices{
+        margin: 10px;
+    }
+}
